@@ -39,12 +39,12 @@ musicButton.addEventListener('click', async () => {
     try {
         if (audio.paused) {
             await audio.play();
-            musicIcon.textContent = 'Ⅱ';
+            musicIcon.textContent = "pause";
             musicLabel.innerHTML =
                 'Nuestra canción<br><small>Reproduciendo...</small>';
         } else {
             audio.pause();
-            musicIcon.textContent = '▶';
+            musicIcon.textContent = "play_arrow";
             musicLabel.innerHTML =
                 'Nuestra canción<br><small>Toca para escuchar</small>';
         }
