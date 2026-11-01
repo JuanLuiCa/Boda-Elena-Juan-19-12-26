@@ -1,0 +1,364 @@
+
+:root {
+    --beige: #ead8c2;
+    --beige-light: #f4e9dc;
+    --gold: #b58c68;
+    --gold-dark: #987451;
+    --text: #50483f;
+    --white: #fff;
+    --script: 'Great Vibes', cursive;
+    --serif: 'Cormorant Garamond', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--serif);
+    color: var(--text);
+    background: var(--white);
+    text-align: center;
+    font-size: 17px;
+}
+
+.hero {
+    position: relative;
+    min-height: 100svh;
+    min-height: 100vh;
+    background:
+        url('../img/portada.jpg') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(35, 29, 25, .42);
+}
+
+.hero-top {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 30px;
+}
+
+.hero-small {
+    font-family: var(--script);
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-family: var(--script);
+    font-weight: 400;
+    font-size: clamp(55px, 12vw, 95px);
+    margin: 25px 0 65px;
+}
+
+.hero-date {
+    letter-spacing: 5px;
+    font-size: 18px;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 22px;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.section-beige {
+    background: var(--beige);
+}
+
+.section-white {
+    background: var(--white);
+}
+
+.invitation {
+    padding: 65px 20px 75px;
+}
+
+.music-container {
+    margin-bottom: 65px;
+}
+
+.music-button {
+    border: none;
+    border-radius: 35px;
+    background: white;
+    color: var(--gold);
+    padding: 12px 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--serif);
+    cursor: pointer;
+    box-shadow: 0 3px 15px rgba(0,0,0,.08);
+}
+
+#music-icon {
+    background: var(--gold);
+    color: white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+}
+
+.music-button small {
+    color: #8b8176;
+}
+
+.invitation-message {
+    max-width: 550px;
+    margin: auto;
+}
+
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.parents-names {
+    font-family: var(--script);
+    font-size: 29px;
+    color: var(--gold);
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.invitation-quote {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.locations {
+    padding: 65px 20px 30px;
+}
+
+.location-card {
+    max-width: 420px;
+    margin: 0 auto 35px;
+    padding: 35px 25px;
+    border: 1px solid #eee9e4;
+    border-radius: 18px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.035);
+}
+
+.location-icon {
+    color: var(--gold);
+    font-size: 28px;
+}
+
+.location-card h2,
+.dresscode h2,
+.gifts h2 {
+    font-family: var(--script);
+    font-weight: 400;
+    font-size: 38px;
+    color: var(--gold);
+    margin: 10px 0;
+}
+
+.location-card h3 {
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.location-card p {
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+.location-time {
+    margin: 10px 0 20px;
+}
+
+.gold-button {
+    display: block;
+    background: var(--gold);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px;
+    max-width: 250px;
+    margin: 20px auto 0;
+    font-size: 15px;
+}
+
+.dresscode {
+    padding: 55px 20px 65px;
+}
+
+.section-subtitle {
+    letter-spacing: 4px;
+    font-size: 11px;
+    color: #9b8b7b;
+    margin: 12px 0;
+}
+
+.dresscode h3 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.dress-figures {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin: 30px 0;
+}
+
+.dress-figures div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--gold);
+}
+
+.dress-figures span {
+    font-size: 35px;
+}
+
+.dress-figures small {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.reserved-title {
+    margin-top: 35px;
+}
+
+.reserved-color {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.white-swatch {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+.small-note {
+    font-size: 14px;
+    color: #8b8176;
+}
+
+.gifts {
+    padding: 55px 25px 75px;
+}
+
+.gifts > p {
+    max-width: 450px;
+    margin: 20px auto;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.gift-links {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 35px;
+}
+
+.gift-links a {
+    color: var(--gold);
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.farewell {
+    padding: 40px 25px;
+    color: var(--gold-dark);
+    font-family: var(--script);
+    font-size: 27px;
+}
+
+.farewell h2 {
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.countdown-section {
+    background: var(--beige);
+    padding: 30px 12px 40px;
+}
+
+.countdown-section h2 {
+    font-family: var(--script);
+    font-size: 37px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: clamp(12px, 5vw, 35px);
+}
+
+.countdown div {
+    display: flex;
+    flex-direction: column;
+}
+
+.countdown strong {
+    font-size: clamp(23px, 6vw, 35px);
+    font-weight: 500;
+}
+
+.countdown span {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+    .locations {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .location-card {
+        width: 380px;
+        margin: 0;
+    }
+
+    .hero {
+        background-position: center 40%;
+    }
+}
